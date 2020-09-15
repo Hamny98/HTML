@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transparent checkout form</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="checkout_form">
+  <form >
+    <div class="card_HolderName">
+      <p>Card Holder Name</p>
+      <input type="text" class="input" placeholder="eg : Mohamed Hamny">
+    </div>
+    <div class="card_number" id="card-container">
+      <p for="card_number">Card Number</p>
+      <div>
+        <input type="text" class="input" id="card" placeholder="xxxx xxxx xxxx xxxx"> 
+        <div id="logo"></div>
+    </div>
+    </div>
+      <div class="card_lables">
+        <p id="card_month">Month</p>
+        <p id="card_year">Year</p>
+        <p id="card_ccv">CVV</p> 
+      </div>
+    <div class="card_grp">   
+
+      <div class="expiry_date">
+        
+        <input type="text" class="expiry_input" data-mask="00"  placeholder="xx">
+        <input type="text" class="expiry_input" data-mask="00" placeholder="xx">
+      </div>
+      <div class="cvc">
+        <input type="text" class="cvc_input" data-mask="000" placeholder="xxx">
+        <div class="cvc_img">
+            ?
+           <div class="img">
+             <img src="https://i.imgur.com/2ameC0C.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn" type="submit">
+      Confirm
+    </div>
+    
+  </form>
+    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="card-validator.js"></script>
+</body>
+</html>
